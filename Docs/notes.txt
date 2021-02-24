@@ -1,0 +1,162 @@
+Java course
+---------------------MODULO 1--------------------------------
+javac -  Java compiler
+Components of a Java class
+- Package: Every Java classes are part of a package, otherwise it becomes part of a default package.(The pakage statement it must be the first statement in the class definiton)
+- //Commnets /**/Multiline /**special comments for javadoc
+- class: marks the start of a class. It can be as simple as the keyword class followed by the name of a class.
+
+    Access modifiers
+    Nonaccess modifiers
+    Class name
+    Name of the base class, if the class is extending another class
+    All implemented interfaces, if the class is implementing any interfaces
+    Class body (class fields, methods, constructors), included within a pair of curly braces, {}
+- variable:instance variables or instance attributes. Each object has its own copy of the instance variables. If you change the value of an instance variable for an object, the value for the same named instance variable won’t change for another object. The instance variables are defined within a class but outside all methods in a class.
+- methods: A class method or static method can be used to manipulate the static variables.
+- constructors: A class constructor is used to create and initialize the objects of a class.
+
+
+
+---------------------MODULO 2--------------------------------
+TIPOS DE DATOS PRIMITIVOS (son 8)
+- numericos (int, byte, long, short, double64, float32)
+- boolean, char
+decimal, octal 0 de 0-7, binario 0b 1-0, hexa 0x 0-f
+booleanos 
+characteres
+
+Variables de referencia a objetos
+-se guarda una referencia en nuestras variables.(una direccion de memoria)
+-apuntan a objetos, una instancia de un objeto, tienen comportamiento y estado.
+
+Tipo    identificador = objeto referido 
+Persona   persona1    =  new Persona();
+
+El Objeto vive en Heap Memory
+
+Cuando creas un objeto 
+
+1- Se crea un objeto 
+2- En Stack se crea la variable persona en null
+3- se asigna valor 
+
+Si no apuntas a ningun lado se va al garbage collector y se elimina de la memoria por la JVM
+
+Variable de dato primitivo directo en stack.
+
+Diferencia entre variables de datos primitivos y variables de referencia
+- primitivos en stack 
+- referencia en heap apuntador
+
+al comparar se compara la referencia con == no los datos contenidos en cada objeto.
+
+variables de referencia solo se puede asignar un null como valor por default, mentras que las variable primitivas el valor default puede variar:
+int valorInt = 0
+short valor = 0
+double valor = 0.0
+float valor = 0.0
+boolean valor = false
+char valor = '\u0000'
+
+USO DE OPERADORES 
+-De asignacion (=)
+	-Primero operacion, luego asignas(+=,-=,*=,/=)
+-Aritmeticos (+,-,*,/,% modulo,++ incremento,-- decremento)
+	-Modulo es el residuo de una division.
+-Relacionales(>,<,>=,<=,==,!=) result siempre es boolean.
+-Logicos(!,&&,||) Evaluar una o mas expresiones, siempre retornan boolean.
+
+*-clase optional para evitar nullpointer exception
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+QUE ES EL SCOPE DE UNA VARIABLE
+el scope se determina su periodo de vida en la aplicacion.
+
+clasificaciones:
+-Variables locales
+-Parámetros de métodos 
+-Variables de Instacia
+-Variables de clase(static) se puede acceder desde cualquier thread 
+
+Donde se guarda las variable static
+	- Before Java 8  - PermGen Space(permanent generation)
+	- After Java 8 - Metaspace
+
+-stateful
+-En desarrollo web es mejor variables stateless para no usar mucha memoria
+
+Nacimineto de un objeto 
+- Es diferente declarar a crear 
+
+*(El stack es dinamico)
+
+*(Cuando la creacion de objetos es mas rapida que el garbage collector hay out of memory ERROR)
+
+METODOS CON ARGUMENTOS Y TIPOS DE RETORNO
+Un metodo (comportamiento) es un grupo de istrucciones identificadas con un nombre, y estas cumplen un objetivo especifico.
+
+-¿Como esta conformada la firma de un metodo?
+	-acceso
+	-valor de retorno
+	-identificador(nombre)
+	-parametros
+	
+-------------------------------------------------------------------------------------------------------------------------------------
+
+String 
+(Pool es un patron de diseño)
+- pool solo se hace para valores menores a 127
+
+- String es una cadena de caracteres internos 
+- Los objetos creados con la palabra "new" no se van al pool, tambien el metodo "concat()" crea un nuevo objeto.
+- Las cadenas de String son inmutables no se pueden modificar, en caso de modificarlas por detras se crea un nuevo objeto.
+
+- String Mutables: StringBuilder
+- StringBuilder y StringBuffer son iguales solo que StringBuffer(sincronizado) se usa cuando se usan varios hilos
+
+---------------------------MODULO 4--------------------------------------------------------------------------------------------------
+
+- Al declarar un arreglo apunta a null, no se genera ningun objeto
+- Cuando se asigna memoria para un arreglo, se deben de especificar el numero de dimensiones y el numero de elementos que deberian de almacear.
+- 
+
+---------------------------MODULO 5--------------------------------------------------------------------------------------------------
+if - if else
+- ";" se le llama empty sentence.
+
+enhaced for ("for mejorado" o "for-each")
+
+---------------------------MANEJO DE HERENCIAS--------------------------------------------------------------------------------------------------
+
+- Clases abstractas: 
+- Clases concretas :
+- Inerfaces
+	- Los metodos de las interfaces son publicos.
+- UNA CLASE PUEDE EXTENDER SOLO DE UNA CLASE, PERO PUEDE IMPLEMENTAR VARIAS INTERFACES.
+
+- Palabras "this" y "super"
+- this se usa para hacer shadowing 
+
+SOBREESCRITURA - Se puede entender como que anul el metodo superior para implementar una nueva funcionalidad a ese metodo.
+
+---------------------------LAMBDA--------------------------------------------------------------------------------------------------
+fUNCTIONAL INTERFACE
+
+---------------------------EXCEPTIONS--------------------------------------------------------------------------------------------------
+
+---------------------------MODULOS--------------------------------------------------------------------------------------------------
+-Apartir de java 9 ya esta modularizado
+-Las mismas reglas de los paquetes aplican para los modulos, son las mismas reglas para NOMBRARLOS.
+
+-Que se escribe en el descriptor del modulo --> que requiere y que voy a proveer.
+-requiere MODULOS.
+-exports PAQUETES.
+
+
+
+
+
+
+

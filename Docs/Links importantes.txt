@@ -1,0 +1,18 @@
+LINKS IMPORTANTES
+
+My Experience taking the new Java SE 11 Programmer I 1Z0-815 Exam
+https://www.selikoff.net/2019/03/17/my-experience-taking-the-new-java-se-11-programmer-i-1z0-815-exam/
+
+Libro para OCP EXAM 1Z0-815
+https://www.amazon.com.mx/Oracle-Certified-Professional-Programmer-Study/dp/1119584701
+
+OCP Oracle Certified Professional Java SE 11 Programmer I Exam Fundamentals 1Z0-815
+https://www.amazon.com.mx/Certified-Professional-Programmer-Fundamentals-1Z0-815/dp/1086955811/ref=pd_lpo_14_t_1/131-5118219-2943335?_encoding=UTF8&pd_rd_i=1086955811&pd_rd_r=9e106b48-f4a9-45cf-b7d8-dd45e96e6eae&pd_rd_w=t2VZd&pd_rd_wg=IVMd4&pf_rd_p=d1973811-db3d-413c-af1a-6a5a8b0eb47e&pf_rd_r=QDYBGN81PQV92S7Q5T2M&psc=1&refRID=QDYBGN81PQV92S7Q5T2M
+
+
+Steps to pass Certification
+https://enthuware.com/pass-java-1z0-815-certification-exam
+
+
+EXAM Oracle
+https://education.oracle.com/product/pexam_1Z0-819
