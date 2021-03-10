@@ -1,4 +1,4 @@
-Java course
+﻿Java course
 ---------------------MODULO 1--------------------------------
 javac -  Java compiler
 Components of a Java class
@@ -153,6 +153,41 @@ fUNCTIONAL INTERFACE
 -Que se escribe en el descriptor del modulo --> que requiere y que voy a proveer.
 -requiere MODULOS.
 -exports PAQUETES.
+
+********************************RETOMANDO CURSO UDEMY Y ORACLE*****************************************************************************************
+
+---------------------------PACKAGES AND IMPORTS--------------------------------------------------------------------------------------------------
+-Los paquetes se usan para hacer un set de classes que tienen cosas en comun.
+- solo un paquete se puede definir dentro de un .java source file.
+- Los paquetes siempre son la primera linea de codigo a ejecutar excepto los comments.
+
+- We can have 0 to many import statements.
+- "Import static" importa todos los metodos staric de le path al que apuntas:
+		EX. import static java.lang.Math.PI
+- Los imports resuelven para el import mas especifico
+
+PUNTOS A CHECAR EXAMEN
+Multiple package statements.
+A package statement that is not the first line of code. 
+Import statement not in the correct order, must be after a package statement if one exist and before any other code. 
+Import static statement use in place of an import statement.
+Import statement usin a higher level package with a wild card -*
+ 
+Static Import Statements
+
+---------------------------LENGUAGE DE JAVA--------------------------------------------------------------------------------------------------
+
+- Es derivado de C y C++ pero simplificado.
+- Java code is complied into byte code, which is interpreted by the JVM, and then translated, to execute on the machine it is being hosted on.
+- JDK includes the development tools, compiler, debugger, class inspector and documnetation generator, as well as a Java Runtime Environmnet to run applications.
+- JRE includes only the class libraries and executables required, to run a Java program. 
+- A Java application does not need the JDK to run.
+
+---------------------------PRIMITIVE DATA TYPES & STRING APIs--------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 
